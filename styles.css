@@ -1,0 +1,23 @@
+/* Full-width mode: lift the "readable line length" cap for every file type.
+   The `.wide` / `.max` selectors beat Minimal's per-note `cssclasses` helpers. */
+body.my-obsidian-page-width-full,
+body.my-obsidian-page-width-full .wide,
+body.my-obsidian-page-width-full .max {
+  /* Obsidian default */
+  --file-line-width: 100%;
+
+  /* Minimal theme: content width is `width: --line-width; max-width: --max-width` */
+  --line-width: 100%;
+  --max-width: 100%;
+  --container-table-width: 100%;
+  --container-dataview-table-width: 100%;
+  --container-img-width: 100%;
+  --container-iframe-width: 100%;
+  --container-map-width: 100%;
+  --container-chart-width: 100%;
+}
+
+/* Keep a small gutter; some themes (Minimal) zero the side margins in readable mode. */
+body.my-obsidian-page-width-full .is-readable-line-width {
+  --file-margins: var(--size-4-4) var(--size-4-8) 0;
+}

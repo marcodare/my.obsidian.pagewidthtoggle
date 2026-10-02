@@ -1,0 +1,10 @@
+{
+  "id": "my-obsidian-page-width",
+  "name": "My Obsidian Page Width",
+  "version": "0.1.0",
+  "minAppVersion": "1.4.0",
+  "description": "Toggle between the default readable page width and a full-width layout from the view header, the ribbon, or the command palette.",
+  "author": "Marco Da Re",
+  "authorUrl": "https://github.com/marcodare",
+  "isDesktopOnly": false
+}
